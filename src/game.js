@@ -45,7 +45,7 @@ const getNeighbors = (board, x, y) => {
 const countNeighbors = neighbors =>
   neighbors.reduce((prev, curr) => prev + curr, 0);
 
-const getNextBoard = board => {
+export const getNextBoard = board => {
   const newBoard = [];
   for (let i = 0; i < board.length; i++) {
     const row = board[i];
@@ -63,7 +63,7 @@ const getNextBoard = board => {
 
 const getRandomNumber = max => Math.round(Math.random() * max);
 
-const fillBoardRandomly = size => {
+export const fillBoardRandomly = size => {
   const board = [];
 
   for (let i = 0; i < size; i++) {

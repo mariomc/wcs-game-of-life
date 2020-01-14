@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .cell {
+  width: 33.3333%;
+} */
+
+.cell {
+  background: white;
+  color: transparent;
+}
+
+.alive {
+  background: black;
+}
